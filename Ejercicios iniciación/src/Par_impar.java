@@ -16,6 +16,7 @@ public class Par_impar {
 		else {
 			System.out.println(numero + " es impar");
 		}
+		teclado.close();
 	}
 
 }
