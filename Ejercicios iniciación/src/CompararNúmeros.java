@@ -10,13 +10,30 @@ public class CompararNúmeros {
 		System.out.println("Número 2: " + numero2);
 
 		//condicional compuesta
-		if (numero1 > numero2) 
+		if (numero1 > numero2) {
+			System.out.println(numero1 + " es mayor que " + numero2);
+		}
+		else {
+			if (numero1 < numero2) {
+				System.out.println(numero1 + " es menor que " + numero2);
+			}
+			else {
+				System.out.println(numero2 + " es igual que " + numero1);
+			}	
+		}
+		
+		/* otra opción, esta ejecuta las tres condicionales porque son "if"
+		if (numero1 > numero2) {
 			System.out.println(numero1 + "es mayor que" + numero2);
-			
-		else
-			System.out.println(numero2 + "es mayor que" + numero1);
+		}
 		
+		if (numero1 < numero2) {
+			System.out.println(numero1 + "es menor que" + numero2);
+		}
 		
+		if (numero1 == numero2) {
+			System.out.println(numero1 + "es igual que" + numero2);
+		}
+		*/
 	}
-
 }
