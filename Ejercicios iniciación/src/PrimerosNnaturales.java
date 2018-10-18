@@ -11,7 +11,7 @@ public class PrimerosNnaturales {
 		
 		if (n > 0) {
 			for (int i=1; i <= n; i++) {
-				System.out.println(n + "+" + ++n);
+				System.out.println(n + "+" + n++);
 			}
 		}
 		else {
