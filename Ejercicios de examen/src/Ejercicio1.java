@@ -11,6 +11,12 @@ public class Ejercicio1 {
 		int m = in.nextInt(); 
 		
 		for (int i = 0; i < n; i++) {
+			for (int j = 0; j < m; j++)
+				System.out.print((i == n /2 || j == m / 2) ? "*" : " ");
+			System.out.println();
+		}
+		
+		/*for (int i = 0; i < n; i++) {
 			for (int j = 0; j < m; j++) {
 				if (i == n /2 || j == m / 2) {
 					System.out.print("*");
@@ -21,6 +27,8 @@ public class Ejercicio1 {
 			}
 			System.out.println();
 		}
+		*/
+		
 		/*for (int i = 0; i < n; i++) {
 			
 			if (i == n  / 2) {
@@ -40,7 +48,7 @@ public class Ejercicio1 {
 			
 			System.out.println();
 		}
-		gftdfh
+		
 		*/
 
 	}
