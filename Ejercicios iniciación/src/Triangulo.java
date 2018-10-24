@@ -16,6 +16,8 @@ public class Triangulo {
 		else {
 			System.out.println("Pa tu casa");
 			
+			
+			//ggg
 			in.close();
 		}
 	}
