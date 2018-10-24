@@ -12,7 +12,7 @@ public class Triangulo_Con_Numeros {
 			for (int j = 0; j < espacios; j++) {
 				System.out.println(" ");
 			}
-			
+			//ggg
 			for (i = n; i == n; i++) {
 				System.out.println(n);
 			}
