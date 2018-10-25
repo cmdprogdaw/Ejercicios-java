@@ -7,7 +7,7 @@ import java.util.Scanner;
 		public static void main(String[] args) {
 	   
 		Scanner in = new Scanner (System.in);
-		System.out.println("Introduzca un numero: ");
+		System.out.print("Introduzca un numero: ");
 		int n = in.nextInt();
 		int imparIni = n * (n - 1) + 1;
 		int imparFin = (n * n) + n - 1;

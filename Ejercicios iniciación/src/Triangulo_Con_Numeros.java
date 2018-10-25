@@ -1,4 +1,4 @@
-//Anidando bucles y con los digitos /0, ...., 9) se pueden escribir triangulos interesting 
+//Anidando bucles y con los digitos (0, ...., 9) se pueden escribir triangulos interesting 
 public class Triangulo_Con_Numeros {
 
 	public static void main(String[] args) {
@@ -12,7 +12,7 @@ public class Triangulo_Con_Numeros {
 			for (int j = 0; j < espacios; j++) {
 				System.out.println(" ");
 			}
-			//ggg
+			
 			for (i = n; i == n; i++) {
 				System.out.println(n);
 			}
