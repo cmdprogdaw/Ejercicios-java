@@ -2,7 +2,7 @@
 public class CuadradosNnaturales {
 
 	public static void main(String[] args) {
-		// ni p idea
+		
 
 	}
 

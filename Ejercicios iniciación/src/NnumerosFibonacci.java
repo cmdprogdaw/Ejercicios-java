@@ -2,8 +2,7 @@
 public class NnumerosFibonacci {
 
 	public static void main(String[] args) {
-		// jaja ni idea
-
+	
 	}
 
 }
