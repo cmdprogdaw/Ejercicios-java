@@ -35,27 +35,72 @@ public class DibujosConAsteristos {
 			System.out.println();
 		}
 	}
-
-	static void tablero (int n, int m) {
-		int escaque = 3;
-		for (int i = 0; i < n; i++) {
-			for (int j = 0; j < m; j++) {
-				if ((i % 2 == 0 && j % 2 != 0) || (i % 2 != 0 && j % 2 == 0)) {
-					System.out.print("*"); System.out.print("*"); System.out.print("*");
+	
+	
+	static void tablero (int f, int c, int l) {
+		int ctxt = c * l;
+		int ftxt = f * l;
+		for (int i = 0; i < ftxt; i++) {
+			for (int j = 0; j < ctxt; j++) {
+				int ctab = j / l;
+				int ftab = i / l;
+				if ((ftab % 2 == 0 && ctab % 2 != 0) || (ftab % 2 != 0 && ctab % 2 == 0)) {
+					System.out.print("*"); 
 				}
 				else {
-					System.out.print(" "); System.out.print(" ");System.out.print(" ");
+					System.out.print(" "); 
 				}
+				
 			}
 			System.out.println();
 		}
 	}
 	
+//	static void tablero (int f, int c, int l) {
+//		for (int i = 0; i < f; i++) {
+//			for (int j = 0; j < l; j++) {
+//				for (int z = 0; z < c; z++) {
+//					for (int r = 0; r < l; r++) {
+//						if ((i % 2 == 0 && z % 2 != 0) || (i % 2 != 0 && z % 2 == 0)) {
+//							System.out.print("*"); 
+//						}
+//						else {
+//							System.out.print(" "); 
+//						}
+//					}
+//					
+//				}
+//				System.out.println();
+//			}
+//
+//		}
+//	}
+	
+	
+	
+	
+//	static void tablero (int n, int m) {
+//		for (int i = 0; i < n; i++) {
+//			for (int j = 0; j < 3; j++) {
+//				for (int z = 0; z < m; z++) {
+//					if ((i % 2 == 0 && z % 2 != 0) || (i % 2 != 0 && z % 2 == 0)) {
+//						System.out.print("***"); 
+//					}
+//					else {
+//						System.out.print("   "); 
+//					}
+//				}
+//				System.out.println();
+//			}
+//			
+//		}
+//	}
+	
 	
 	public static void main(String[] args) {
 	  volcan(6);
 	  mosaico(8, 8);
-	  tablero (8, 8);
+	  tablero (8, 8, 3);
 	}
 
 }
