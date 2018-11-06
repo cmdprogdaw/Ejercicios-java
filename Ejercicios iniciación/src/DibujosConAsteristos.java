@@ -23,39 +23,66 @@ public class DibujosConAsteristos {
 		}
 	}
 	
+	//1 bucle for
 	static void mosaico (int f, int c) {
+
 		for (int i = 0; i < f; i++) {
-			for (int j = 0; j < c; j++) {
-				if ((i % 2 == 0 && j % 2 != 0) || (i % 2 != 0 && j % 2 == 0))
-					System.out.print("*");
-				else
-					System.out.print(" ");
-//			System.out.println((i % 2 == 0 && j % 2 != 0) || (i % 2 != 0 && j % 2 == 0));
+			if (f % 2 == 0) {
+				System.out.println("*");
+			}
+			else {
+				System.out.println(" ");
 			}
 			System.out.println();
 		}
+
 	}
+
+	//2 bucles for
+//	static void mosaico (int f, int c) {
+//		for (int i = 0; i < f; i++) {
+//			for (int j = 0; j < c; j++) {
+//				if ((i % 2 == 0 && j % 2 != 0) || (i % 2 != 0 && j % 2 == 0))
+//					System.out.print("*");
+//				else
+//					System.out.print(" ");
+//			}
+//			System.out.println();
+//		}
+//	}
 	
-	
+	//1 bucle for
 	static void tablero (int f, int c, int l) {
-		int ctxt = c * l;
-		int ftxt = f * l;
-		for (int i = 0; i < ftxt; i++) {
-			for (int j = 0; j < ctxt; j++) {
-				int ctab = j / l;
-				int ftab = i / l;
-				if ((ftab % 2 == 0 && ctab % 2 != 0) || (ftab % 2 != 0 && ctab % 2 == 0)) {
-					System.out.print("*"); 
-				}
-				else {
-					System.out.print(" "); 
-				}
-				
+		for (int i = 0; i <= l; i++) {
+			if ((f % 2 == 0 && c % 2 != 0) || (f % 2 != 0 && c % 2 == 0))
+				System.out.print("*"); 
+			else
+				System.out.println(" ");
 			}
 			System.out.println();
 		}
-	}
 	
+	//2 bucles for
+//	static void tablero (int f, int c, int l) {
+//		int ctxt = c * l;
+//		int ftxt = f * l;
+//		for (int i = 0; i < ftxt; i++) {
+//			for (int j = 0; j < ctxt; j++) {
+//				int ctab = j / l;
+//				int ftab = i / l;
+//				if ((ftab % 2 == 0 && ctab % 2 != 0) || (ftab % 2 != 0 && ctab % 2 == 0)) {
+//					System.out.print("*"); 
+//				}
+//				else {
+//					System.out.print(" "); 
+//				}
+//				
+//			}
+//			System.out.println();
+//		}
+//	}
+	
+	//4 bucles for
 //	static void tablero (int f, int c, int l) {
 //		for (int i = 0; i < f; i++) {
 //			for (int j = 0; j < l; j++) {
@@ -78,7 +105,7 @@ public class DibujosConAsteristos {
 	
 	
 	
-	
+	//sin elegir la longitud de la linea
 //	static void tablero (int n, int m) {
 //		for (int i = 0; i < n; i++) {
 //			for (int j = 0; j < 3; j++) {
