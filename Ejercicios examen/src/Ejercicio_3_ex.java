@@ -54,7 +54,17 @@ public class Ejercicio_3_ex {
 	 * el método 'fix45' mostrando por pantalla el resultado de su ejecución. 
 	 */
 	
+	public static void mostrarVector(int [] vector) {
+		System.out.print("[");
+		for (int i=0; i<vector.length; i++)
+			System.out.print("'" + vector[i] + "'" + (i == vector.length - 1 ? "" : ", "));
+		System.out.println("]");
+	}
+	
 	public static void main(String[] args) {
-		
+		int [] vector = {5, 4, 9, 4, 9, 5};
+		mostrarVector(vector);
+		fix45(vector);
+		mostrarVector(vector);
 	}
 }

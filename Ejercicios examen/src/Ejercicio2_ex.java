@@ -10,7 +10,7 @@ public class Ejercicio2_ex {
 	 * contenga los mismos caracteres que ésta y en el mismo orden. 
 	 */
 
-	// no es necesario, ya existe algo asi en ,a clase String
+	// no es necesario, ya existe algo asi en la clase String
 	
 	public static char [] stringToArray(String cadena) {
 		char [] vector = new char [cadena.length()];
